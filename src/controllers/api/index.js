@@ -1,5 +1,13 @@
-const getAllWorkouts = (req, res) => {
-  res.send("get all workouts");
+const { Workout } = require("../../models");
+
+const getAllWorkouts = async (req, res) => {
+  try {
+    const workouts = await Workout.find();
+    return res.json({ workouts });
+  } catch (error) {
+    console.log(error.message);
+    return res.status(500).json({ error: "Failed to get workouts" });
+  }
 };
 const addWorkout = (req, res) => {
   res.send("add workout");
