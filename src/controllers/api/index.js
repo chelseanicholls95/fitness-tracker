@@ -10,7 +10,7 @@ const getAllWorkouts = async (req, res) => {
   }
 };
 const addWorkout = (req, res) => {
-  res.send("add workout");
+  console.log(req);
 };
 const updateWorkout = (req, res) => {
   res.send("update workout");
