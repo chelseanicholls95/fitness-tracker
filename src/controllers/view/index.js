@@ -1,13 +1,15 @@
+const path = require("path");
+
 const viewStats = (req, res) => {
-  res.send("stats");
+  res.sendFile(path.join(__dirname, "../../public/stats.html"));
 };
 
 const viewExercise = (req, res) => {
-  res.send("exercise");
+  res.sendFile(path.join(__dirname, "../../public/exercise.html"));
 };
 
 const viewHome = (req, res) => {
-  res.send("home");
+  res.sendFile(path.join(__dirname, "../../public/index.html"));
 };
 
 module.exports = {
