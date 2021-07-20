@@ -34,7 +34,7 @@ const updateWorkout = async (req, res) => {
     const { id } = req.params;
 
     const workout = await Workout.findByIdAndUpdate(id, {
-      $push: { exercise: req.body },
+      $push: { exercises: req.body },
     });
 
     if (res.status === 404) {
