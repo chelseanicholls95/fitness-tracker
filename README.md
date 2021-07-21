@@ -2,6 +2,8 @@
 
 ## Description
 
+A fitness tracker which allows a user to keep track of their workouts. Users can add new workouts, continue their workout and see charts showing their workouts.
+
 ## Table of Contents
 
 [Description](#description)  
@@ -14,20 +16,35 @@
 
 ## Technologies Used
 
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
 ## Getting Started
 
 ```
 git clone git@github.com:chelseanicholls95/fitness-tracker.git
 cd fitness-tracker
 code .
+
 npm install
+npm run seed
+npm run dev
 ```
 
 ## Link to Deployed Application
 
-View the working application [here]().
+View the working application [here](https://mysterious-chamber-32416.herokuapp.com/?id=60f710fcd0a263001583d70c).
 
 ## Screenshots
+
+![homepage](public/assets/home.png)
+![exercise](public/assets/exercise.png)
+![stats](public/assets/stats.png)
 
 ## License
 
